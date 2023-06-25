@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Erica+One&family=Foldit:wght@100;200;300;400;500;600;700;800;900&family=Fredoka:wght@300;400;500;600;700&family=Lilita+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+
+
+
+
+<style>
+
+/* font-family: 'Erica One', cursive;
+font-family: 'Foldit', cursive;
+font-family: 'Fredoka', sans-serif;
+font-family: 'Lilita One', cursive; */
+
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fredoka', sans-serif;
+    color:white;
+    background-image:linear-gradient(45deg, #e1eec3, #f05053);
+}
+
+h6,h1,h4,h2,h3{
+    margin:0;
+    padding:0; 
+}
+
+.gradient-text {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #e1eec3, #f05053);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.container{
+    background-color: #36454F;
+    border-radius: 10px;
+    padding-top:20px;
+    padding-bottom:60px;
+    text-align: center;
+    width:300px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gameName h1{
+    letter-spacing: 2px;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.bestScore{
+    padding:10px 0;
+}
+
+.author{
+    padding:0 35px 0 0;
+    text-align: right;
+    font-size:16px;
+}
+
+.btn{
+    width:80px;
+    height:40px;
+    background-color: #39FF14;
+    color:white;
+    letter-spacing:2px;
+    font-size:10px;
+    border:none;
+    border-radius:10px ;
+}
+
+
+
+.setting{
+    display:flex;
+    flex-direction: row;
+    padding:0 20px;
+    justify-content: space-between;
+}
+
+.game-disc{
+
+    background-color: white;
+    color:red;
+    margin:10px 10px 0 10px;
+    padding:0 10px;
+    border-radius:10px;
+    font-size:16px;
+    text-align: left;
+}
+
+.play-btn{
+    font-size: 20px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 800;
+}
+
+#hint-btn{
+    background-color: #ffff00;
+}
+
+
+
+
+
+</style>
+
+<body>
+    
+   <div class="container">
+        
+        <div class="gameName">
+            <h1 class="gradient-text ">SIMON</h1>
+            <h6 class="author">by SAURAV</h6>
+        </div>
+
+        <div class="bestScore">
+            <h4>Best score</h4>
+            <h4>by- </h4>
+        </div>
+   
+        <div class="playerInput">
+            <h2 style="padding-bottom:10px; font-size:36px">Your name</h2>
+            <form style="padding-bottom:10px;" >
+                <input type="text" id="username" name="Name" style="margin-bottom:10px; height:30px; width:200px; border-radius: 10px; border:none;"/><br>
+                <button class="play-btn btn" onclick="sendData()">PLAY</button>
+            </form>
+        </div> 
+
+        <div class="setting">
+            <button class="sound setting-btn btn" id="sound-btn" onclick="soundFunc()" value="ON"><img id="soundImg" src="sound.png" style="width:30px;" alt=""></button>
+            <button class="hint setting-btn btn" id="hint-btn" onclick="hintFunc()" value="ON"><img id="hintImg" src="hint-off.png" style="width:30px;" alt=""></button>
+        </div>
+
+        <div class="game-disc">
+            <p>
+                RULE:<br>
+                The game is simple, the game will blink some tiles randomly and when your turn comes you have to click them in the same sequence.
+                With each level it will get faster so keep an eye on them. 
+                ENJOY 😊
+            </p>
+        </div>
+
+   </div>
+
+   <script src="index.js"></script>
+</body>
+
+
+
+</html>

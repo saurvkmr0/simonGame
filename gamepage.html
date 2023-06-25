@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Erica+One&family=Foldit:wght@100;200;300;400;500;600;700;800;900&family=Fredoka:wght@300;400;500;600;700&family=Lilita+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Simon</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="title-section">
+            <h1 class="gradient-text">SIMON</h1>
+        </div>
+
+        <div class="info-area">
+            <div class="player-name">
+                <h6>Player</h6>
+            </div>
+            <div class="level">
+                <h6>Level</h6>
+            </div>
+            <div class="turn">
+                <h6>Turn</h6>
+            </div>
+        </div>
+
+        <div class="game_area">
+            <div class="game_grid">
+                <button class="btn1"><h6 class="hintNum" id="h1">1</h6></button>
+                <button class="btn2"><h6 class="hintNum" id="h2">2</h6></button>
+                <button class="btn3"><h6 class="hintNum" id="h3">3</h6></button>
+                <button class="btn4"><h6 class="hintNum" id="h4">4</h6></button>
+            </div>
+        </div>
+
+        <div class="control-area">
+            <div class="play">
+                <button class="play-btn" onclick="gameStart()">Play</button>
+            </div>
+            <div class="score">
+                <button class="score-card">Last<br>Score :</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- onclick="gameStart()" -->
+
+
+    <script src="index.js"></script>
+</body>
+</html>
